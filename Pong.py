@@ -122,15 +122,16 @@ def game_loop():
         
         #constantly check when keys are held down
         pressed_keys = pygame.key.get_pressed() 
-        if pressed_keys[pygame.K_UP]:
-            player2.move(-movement)
-        elif pressed_keys[pygame.K_DOWN]:
-            player2.move(movement)
-        elif pressed_keys[pygame.K_w]:
+        if pressed_keys[pygame.K_w]:
             player1.move(-movement)
         elif pressed_keys[pygame.K_s]:
             player1.move(movement)
 
+        if pressed_keys[pygame.K_UP]:
+            player2.move(-movement)
+        elif pressed_keys[pygame.K_DOWN]:
+            player2.move(movement)
+            
         #check collision with paddle or top and bottom
         if ball.v_x > 0:
             ball.check_collision(player2)
