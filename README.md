@@ -9,6 +9,7 @@ I simply wanted to recreate a retro arcade game in Python with Pygame.
 First, we must install Python3.
 
 `$ sudo apt-get update`
+
 `$ sudo apt-get install python3.6`
 
 For Windows, use the [official Python website](https://www.python.org/downloads/windows/)
